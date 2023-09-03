@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 float train[][2] = {
     {0, 0},
@@ -16,8 +17,10 @@ float rand_float(void)
 
 int main()
 {
+    // srand(time(0));
+    srand(69);
     // y = x*w;
-    float w = rand_float();
+    float w = rand_float()*10.0f;
     printf("%f\n", w);
     return 0;
 }
